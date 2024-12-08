@@ -13,10 +13,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Ultra&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/home-CrolPOGj.js"></script>
+  <script type="module" crossorigin src="/assets/home-BI0DXhoZ.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/transitions-Jp30fmKu.js">
   <link rel="stylesheet" crossorigin href="/assets/transitions-CRGv7LsF.css">
-  <link rel="stylesheet" crossorigin href="/assets/home-DWF2n56m.css">
+  <link rel="stylesheet" crossorigin href="/assets/home-C3JnmH2c.css">
 </head>
 <body onload="onFirstLoad('home')">
 
@@ -33,7 +33,11 @@
     </svg>
   </div>
 
-  <main>
+  <main
+    x-data="{
+      heroHover: 'test'
+    }"
+  >
     <div id="background" class="background"></div>
     <div class="content">
       <header>
@@ -48,22 +52,25 @@
           <ul>
             <!-- <li><a href="/work.html">Work</a></li>
             <li><a href="/showcase.html">Showcase</a></li> -->
-            <li><a href="#" id="splt" class="splt">Work</a></li>
-            <li><a href="#" id="splt" class="splt">Showcase</a></li>
-            <li><a href="#" id="splt" class="splt">Contact</a></li>
+            <li><a href="#" class="splt">Work</a></li>
+            <li><a href="#" class="splt">Showcase</a></li>
+            <li><a href="#" class="splt">Contact</a></li>
           </ul>
         </menu>
       </header>
+      <div class="helper">
+        <span x-text="heroHover"></span>
+      </div>
       <div class="hero">
-        <h1 id="splt" class="splt" onclick="rotateGroup(-30)">Galenic</h1>
-        <h1 id="splt" class="splt" onclick="rotateGroup(30)">FOWAB</h1>
-        <h1 id="splt" class="splt" onclick="rotateGroup(90)">Ohdio</h1>
-        <h1 id="splt" class="splt" onclick="rotateGroup(150)">SEQTA</h1>
-        <h1 id="splt" class="splt" onclick="rotateGroup(210)">GoPlay</h1>
-        <h1 id="splt" class="splt" onclick="rotateGroup(270)">Zenius</h1>
+        <h1 class="splt" onclick="rotateGroup(-30)" @mouseover="heroHover = 'Explore my time in Galenic'" @mouseout="heroHover = ''">Galenic</h1>
+        <h1 class="splt" onclick="rotateGroup(30)" @mouseover="heroHover = 'Explore my time in FOWAB'" @mouseout="heroHover = ''">FOWAB</h1>
+        <h1 class="splt" onclick="rotateGroup(90)" @mouseover="heroHover = 'Explore my time in Ohdio'" @mouseout="heroHover = ''">Ohdio</h1>
+        <h1 class="splt" onclick="rotateGroup(150)" @mouseover="heroHover = 'Explore my time in SEQTA'" @mouseout="heroHover = ''">SEQTA</h1>
+        <h1 class="splt" onclick="rotateGroup(210)" @mouseover="heroHover = 'Explore my time in GoPlay'" @mouseout="heroHover = ''">GoPlay</h1>
+        <h1 class="splt" onclick="rotateGroup(270)" @mouseover="heroHover = 'Explore my time in Zenius'" @mouseout="heroHover = ''">Zenius</h1>
       </div>
       <footer>
-        <p>© 2024 Arie M. Prasetyo (still under construction)</p>
+        <p>© 2024 Arie M. Prasetyo (still under construction).</p>
       </footer>
     </div>
   </main>
