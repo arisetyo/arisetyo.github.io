@@ -13,12 +13,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Ultra&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/home-30d6WQcM.js"></script>
+  <script type="module" crossorigin src="/assets/home-D4QwGKOH.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/transitions-Jp30fmKu.js">
   <link rel="stylesheet" crossorigin href="/assets/transitions-CRGv7LsF.css">
-  <link rel="stylesheet" crossorigin href="/assets/home-C5QozroF.css">
+  <link rel="stylesheet" crossorigin href="/assets/home-DVqZ4zua.css">
 </head>
 <body onload="onFirstLoad('home')">
+
+  <div id="jelly_cursor"></div>
 
   <div class="transition">
     <div></div><div></div>
@@ -48,9 +50,7 @@
         </div>
         <menu>
           <ul>
-            <!-- <li><a href="/work.html">Work</a></li>
-            <li><a href="/showcase.html">Showcase</a></li> -->
-            <li><a href="#" class="splt">Work</a></li>
+            <li><a href="#" title="Coming soon!" class="splt">Work</a></li>
             <li><a href="#" class="splt">Showcase</a></li>
             <li><a href="#" class="splt">Contact</a></li>
           </ul>
@@ -62,47 +62,55 @@
       </div>
 
       <div class="hero">
-        <h3
+        <a
+          href="#"
           class="splt"
           onclick="rotateGroup(-30)"
           @mouseover="helper = 'in Galenic'"
           @click="showHero = true; selectedHero = 0"
-        >Galenic</h3>
-        <h3
+        >Galenic</a>
+        <a
+          href="#"
           class="splt"
           onclick="rotateGroup(30)"
           @mouseover="helper = 'in FOWAB'"
           @click="showHero = true; selectedHero = 1"
-        >FOWAB</h3>
-        <h3
+        >FOWAB</a>
+        <a
+          href="#"
           class="splt"
           onclick="rotateGroup(90)"
           @mouseover="helper = 'in Ohdio'"
           @click="showHero = true; selectedHero = 2"
-        >Ohdio</h3>
-        <h3
+        >Ohdio</a>
+        <a
+         href="#"
           class="splt"
           onclick="rotateGroup(150)"
           @mouseover="helper = 'in SEQTA'"
           @click="showHero = true; selectedHero = 3"
-        >SEQTA</h3>
-        <h3
+        >SEQTA</a>
+        <a
+          href="#"
           class="splt"
           onclick="rotateGroup(210)"
           @mouseover="helper = 'in GoPlay'"
           @click="showHero = true; selectedHero = 4"
-        >GoPlay</h3>
-        <h3
+        >GoPlay</a>
+        <a
+          href="#"
           class="splt"
           onclick="rotateGroup(270)"
           @mouseover="helper = 'in Zenius'"
           @click="showHero = true; selectedHero = 5"
-        >Zenius</h3>
-        <h3
+        >Zenius</a>
+        <a
+          href="#"
+          class="splt"
           onclick="rotateGroup(0)"
           @mouseover="helper = 'Beyond'"
           @click="showHero = true; selectedHero = 6"
-        >...beyond</h3>
+        >...beyond</a>
       </div>
 
       <div class="show_container" x-show="showHero"
@@ -121,6 +129,9 @@
           </div>
           <div class="hero_timeline">
             <h3 x-text="selectedHero !== null ? hero[selectedHero].timeline : ''"></h3>
+          </div>
+          <div class="hero_close">
+            <a href="#" class="btn_flip" data-back="popup" data-front="close" @click="showHero = false"></a>
           </div>
         </div>
       </div>
