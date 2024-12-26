@@ -13,10 +13,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Ultra&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/home-D4QwGKOH.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/transitions-Jp30fmKu.js">
+  <script type="module" crossorigin src="/assets/home-Cc0NOUP4.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/transitions-DddcmZnp.js">
   <link rel="stylesheet" crossorigin href="/assets/transitions-CRGv7LsF.css">
-  <link rel="stylesheet" crossorigin href="/assets/home-DVqZ4zua.css">
+  <link rel="stylesheet" crossorigin href="/assets/home-BEBT8oU3.css">
 </head>
 <body onload="onFirstLoad('home')">
 
@@ -35,7 +35,7 @@
     </svg>
   </div>
 
-  <main x-data="data">
+  <div class="container" x-data="data">
     
     <div id="background" class="background"></div>
     
@@ -113,7 +113,8 @@
         >...beyond</a>
       </div>
 
-      <div class="show_container" x-show="showHero"
+      <main
+        x-show="showHero"
         x-transition:enter.duration.500ms
         x-transition:leave.duration.400ms>
         <div class="selected_hero_container">
@@ -134,13 +135,14 @@
             <a href="#" class="btn_flip" data-back="popup" data-front="close" @click="showHero = false"></a>
           </div>
         </div>
-      </div>
+      </main>
 
       <footer>
         <p>© 2024 Arie M. Prasetyo (still under construction).</p>
       </footer>
     </div>
-  </main>
+  
+  </div>
 
 </body>
 </html>
