@@ -1,4 +1,4 @@
-import{O as p,M as g,n as m,F as n,b as c,U as v,V as u,o as x,H as C,p as _,C as w,q as S}from"./transitions-DBz1cktH.js";const b={name:"CopyShader",uniforms:{tDiffuse:{value:null},opacity:{value:1}},vertexShader:`
+import{O as p,M as g,n as m,F as n,b as c,U as v,V as u,o as x,H as C,p as _,C as w,q as S}from"./transitions-BfleZN-e.js";const b={name:"CopyShader",uniforms:{tDiffuse:{value:null},opacity:{value:1}},vertexShader:`
 
 		varying vec2 vUv;
 

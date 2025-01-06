@@ -13,12 +13,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Ultra&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/works-BKFaX0eY.js"></script>
-  <link rel="modulepreload" crossorigin href="/assets/transitions-DBz1cktH.js">
-  <link rel="modulepreload" crossorigin href="/assets/cursor-BiwZWS7C.js">
+  <script type="module" crossorigin src="/assets/transitions-BfleZN-e.js"></script>
+  <script type="module" crossorigin src="/assets/cursor-FnPbPZ8t.js"></script>
+  <script type="module" crossorigin src="/assets/pages-dQeMMLRw.js"></script>
   <link rel="stylesheet" crossorigin href="/assets/transitions-CRGv7LsF.css">
+  <link rel="stylesheet" crossorigin href="/assets/pages-oN99ne2W.css">
   <link rel="stylesheet" crossorigin href="/assets/cursor-Dj8KPDO5.css">
-  <link rel="stylesheet" crossorigin href="/assets/works-EvdIdki6.css">
 </head>
 <body
   onload="onFirstLoad('works')"
@@ -26,6 +26,13 @@
 >
 
   <div id="jelly_cursor"></div>
+
+  <div class="transition">
+    <div></div><div></div>
+    <div></div><div></div>
+    <div></div><div></div>
+    <div></div><div></div>
+  </div>
 
   <div class="container" x-data="data">
     
@@ -46,7 +53,7 @@
         <menu>
           <ul>
             <li><a href="#">_</a></li>
-            <li><a href="#" class="splt">Showcase</a></li>
+            <li><a onclick="goToPage('showcase.html')" title="Showcase of work" class="splt">Showcase</a></li>
             <li><a href="#" class="splt">Contact</a></li>
           </ul>
         </menu>
@@ -404,7 +411,7 @@
       </main>
 
       <footer>
-        <p>© 2024 Arie M. Prasetyo (still under construction).</p>
+        <p>© 2024 - 2025 Arie M. Prasetyo (still under construction).</p>
       </footer>
     </div>
   </main>
@@ -414,10 +421,10 @@
     :class="{ 'hidden': !showPopup }"
   >
     <div class="content" style="width: 33vw;">
-      <h4 x-text="imageData[popupId].title"></h4>
-      <p x-html="imageData[popupId].description"></p>
+      <h4 x-text="popupId ? imageData[popupId].title : ''"></h4>
+      <p x-html="popupId ? imageData[popupId].description : ''"></p>
       <div class="image-container">
-        <img class="full" :src="imageData[popupId].source" alt="Popup Image"/>
+        <img class="full" :src="popupId ? imageData[popupId].source : ''" alt="Popup Image"/>
       </div>
       <div class="close-btn" @click="showPopup = false">
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="rgb(255, 238, 0)"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
