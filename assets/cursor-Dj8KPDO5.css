@@ -1,1 +1,0 @@
-#jelly_cursor{position:fixed;top:0;left:0;width:12px;height:12px;background-color:#fff;mix-blend-mode:difference;border-radius:50%;transform-origin:50% 50%;transform:translate(-50%,-50%);will-change:width,height,transform,border;z-index:99999;pointer-events:none}

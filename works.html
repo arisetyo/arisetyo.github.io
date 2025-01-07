@@ -13,12 +13,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Ultra&display=swap" rel="stylesheet">
-  <script type="module" crossorigin src="/assets/transitions-BfleZN-e.js"></script>
-  <script type="module" crossorigin src="/assets/cursor-FnPbPZ8t.js"></script>
-  <script type="module" crossorigin src="/assets/pages-dQeMMLRw.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/transitions-CRGv7LsF.css">
+  <script type="module" crossorigin src="/assets/transitions-Cu1cuBhR.js"></script>
+  <script type="module" crossorigin src="/assets/ScrollTrigger-CYpJKVWP.js"></script>
+  <script type="module" crossorigin src="/assets/data-0kfzCbQq.js"></script>
+  <script type="module" crossorigin src="/assets/pages-CuDY0g78.js"></script>
+  <script type="module" crossorigin src="/assets/cursor-DS_5lVcw.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/transitions-CYTbflLL.css">
   <link rel="stylesheet" crossorigin href="/assets/pages-oN99ne2W.css">
-  <link rel="stylesheet" crossorigin href="/assets/cursor-Dj8KPDO5.css">
+  <link rel="stylesheet" crossorigin href="/assets/cursor-DZVR8tJX.css">
 </head>
 <body
   onload="onFirstLoad('works')"
@@ -40,7 +42,7 @@
     
     <div class="content">
       <header>
-        <a href="./home.html">
+        <a onclick="goToPage('home.html')" title="Home page">
           <div class="logo">
             <svg width="60" viewBox="0 0 423 161" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M52.3281 161C41.7812 161 32.6406 159.008 24.9062 155.023C17.1719 150.961 11.1562 145.531 6.85938 138.734C2.64062 131.938 0.53125 124.477 0.53125 116.352V45.1016C0.53125 36.8984 2.64062 29.4375 6.85938 22.7188C11.1562 15.9219 17.1719 10.5312 24.9062 6.54688C32.6406 2.48438 41.7812 0.453125 52.3281 0.453125H88.4219C98.9688 0.453125 108.109 2.48438 115.844 6.54688C123.656 10.5312 129.672 15.9219 133.891 22.7188C138.109 29.4375 140.219 36.8984 140.219 45.1016V116.352C140.219 124.477 138.109 131.938 133.891 138.734C129.672 145.531 123.656 150.961 115.844 155.023C108.109 159.008 98.9688 161 88.4219 161H52.3281ZM56.4297 107.914C58 107.914 80.6875 107.914 82.0938 107.914C83.5 107.914 89.9688 106.516 91.2344 106.508C92.5 106.5 102.836 107.797 102.836 107.797C102.836 107.797 104.172 23.3125 102.836 19.9062C101.5 16.5 99 13.9424 94.8672 12.4062C90.7344 10.8701 88.8281 11 83.1484 11C77.4688 11 62 11 56.4297 11C50.8594 11 42.7188 12.6406 42.7188 12.6406L45.6484 25.4141C45.6484 25.4141 51.8281 23.1875 56.6641 23.1875C61.5 23.1875 80.0938 23.0164 82.7969 23.1875C85.5 23.3586 86.6562 23.9219 88.8281 25.7109C91 27.5 91.4688 30.9219 91.4688 30.9219V58.2266C91.4688 58.2266 85.5 57 83.1484 56.8203C80.7969 56.6406 60 56.8203 56.4297 56.8203C52.8594 56.8203 48 57.5 44.7109 58.5781C41.4219 59.6562 38.5 63.5 37.2109 65.9609C35.9219 68.4219 35.5703 73.9297 35.5703 75.5703C35.5703 77.2109 35.5703 86.5625 35.5703 89.2812C35.5703 92 35.2109 96.6705 37.5 100C39.7891 103.33 41.3125 105.102 44.7109 106.508C48.1094 107.914 54.8594 107.914 56.4297 107.914ZM57.1328 95.4922C52.2656 95.4922 49.75 94.3203 49.75 94.3203C49.75 94.3203 48.1094 91.5781 48.1094 87.2891C48.1094 83 48.1094 81 48.1094 77.2109C48.1094 73.4219 49.0469 70.5312 49.0469 70.5312C49.0469 70.5312 51.2656 69.3594 57.1328 69.3594C63 69.3594 78 69.3594 82.5625 69.3594C87.125 69.3594 91.4688 70.2969 91.4688 70.2969V94.3203C91.4688 94.3203 86.1562 95.4922 82.3281 95.4922C78.5 95.4922 62 95.4922 57.1328 95.4922Z" fill="black"/>
@@ -54,7 +56,7 @@
           <ul>
             <li><a href="#">_</a></li>
             <li><a onclick="goToPage('showcase.html')" title="Showcase of work" class="splt">Showcase</a></li>
-            <li><a href="#" class="splt">Contact</a></li>
+            <li><a onclick="goToPage('contact.html')" title="In the wild" class="splt">Contact</a></li>
           </ul>
         </menu>
       </header>
@@ -411,7 +413,7 @@
       </main>
 
       <footer>
-        <p>© 2024 - 2025 Arie M. Prasetyo (still under construction).</p>
+        <p>© 2024 - 2025 AMP || Arie M. Prasetyo. <a onclick="goToPage('colophon.html')" title="Colophon" class="splt">Colophon</a>.</p>
       </footer>
     </div>
   </main>
