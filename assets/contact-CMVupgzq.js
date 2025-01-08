@@ -1,4 +1,4 @@
-import{V as c,s as w,a as d,S as g,P as p,W as S,b as x,c as y,M as U,C as P}from"./transitions-Cu1cuBhR.js";import{E as M,R as A,S as l,a as T}from"./RGBShiftShader-C2pYHn4Z.js";import{O as b}from"./OutputPass-IbxvlCVo.js";import"./cursor-DS_5lVcw.js";const E={name:"DotScreenShader",uniforms:{tDiffuse:{value:null},tSize:{value:new c(256,256)},center:{value:new c(.5,.5)},angle:{value:1.57},scale:{value:1}},vertexShader:`
+import{V as c,s as w,a as d,S as g,P as p,W as S,b as x,c as y,M as U,C as P}from"./transitions-Cu1cuBhR.js";import{E as M,R as A,S as l,a as T}from"./RGBShiftShader-C2pYHn4Z.js";import{O as b}from"./OutputPass-IbxvlCVo.js";import"./cursor-CbwcxeUr.js";const E={name:"DotScreenShader",uniforms:{tDiffuse:{value:null},tSize:{value:new c(256,256)},center:{value:new c(.5,.5)},angle:{value:1.57},scale:{value:1}},vertexShader:`
 
 		varying vec2 vUv;
 
