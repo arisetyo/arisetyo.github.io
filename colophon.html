@@ -33,19 +33,36 @@
   <meta name="twitter:description" content="AMP, the personal website of Arie M. Prasetyo, senior technical manager & software developer from Indonesia with over 20 years of experience working with many companies, clients, and co-workers from various countries & continents."/>
   <meta name="twitter:image" content="https://arisetyo.github.io/og.png"/>
 
-  <script type="module" crossorigin src="/assets/colophone-D4fiQm7w.js"></script>
+  <script type="module" crossorigin src="/assets/colophone-B9y9pWee.js"></script>
   <link rel="modulepreload" crossorigin href="/assets/anime.es-CHPHoHaE.js">
   <link rel="modulepreload" crossorigin href="/assets/RGBShiftShader-UoLBgeHZ.js">
   <link rel="modulepreload" crossorigin href="/assets/transitions-B-yrgjAn.js">
   <link rel="modulepreload" crossorigin href="/assets/ScrollTrigger-CYpJKVWP.js">
+  <link rel="modulepreload" crossorigin href="/assets/module.esm-CLvO5GJR.js">
   <link rel="modulepreload" crossorigin href="/assets/cursor-CVGXRmtk.js">
   <link rel="stylesheet" crossorigin href="/assets/transitions-CYTbflLL.css">
   <link rel="stylesheet" crossorigin href="/assets/cursor-CL9uK-6a.css">
-  <link rel="stylesheet" crossorigin href="/assets/colophone-Bmjfr0NQ.css">
+  <link rel="stylesheet" crossorigin href="/assets/colophone-CCEHbd-l.css">
 </head>
-<body onload="onFirstLoad('colophon')">
+<body
+  onload="onFirstLoad('colophon')"
+  x-data="data"
+>
 
   <div id="jelly_cursor"></div>
+
+  <div
+    class="init-overlay"
+    x-show="showOverlay"
+    x-transition:leave.duration.400ms
+  >
+    <div
+      class="start-button"
+      onclick="toggleMusic()"
+      @click="showOverlay = false; $store.data.enableScrolling()">
+      <span>Enter</span>
+    </div>
+  </div>
 
   <div class="transition">
     <div></div><div></div>
@@ -54,7 +71,7 @@
     <div></div><div></div>
   </div>
 
-  <div class="container" x-data="data">
+  <div class="container">
     
     <div id="background" class="background"></div>
     
@@ -116,10 +133,6 @@
           </p>
           <p>
             Background music (colophon): <em>"The Salaryman Ambient Jam"</em> by <a href="https://www.youtube.com/@bepitulaz" target="_blank">Asep Bagja</a> on <a href="https://www.youtube.com/watch?v=duzOII-73cA" target="_blank">YouTube</a>.
-            <a onclick="toggleMusic()">
-              <span id="soundBtn"></span>
-              <img id="soundImg"/>
-            </a>
           </p>
           <p>
             3D model: "low poly space ship" by <a target="_blank" href="https://sketchfab.com/chrisonciuconcepts">chrisonciuconcepts</a> on <a target="_blank" href="https://sketchfab.com/3d-models/low-poly-space-ship-587941c9c11742c6b82dfb99e7b210b9">Sketchfab</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution</a>
@@ -134,7 +147,7 @@
       </main>
 
       <footer id="tl-finish">
-        <p>© 2024 - 2025 AMP || Arie M. Prasetyo.</p>
+        <p>© 2024 - 2025 AMP || Arie M. Prasetyo. <a onclick="goToPage('guestbook.html')" title="Guestbook" class="splt">Guestbook</a>.</p>
       </footer>
     </div>
   </div>
